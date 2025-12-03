@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test DevOps_Site</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0d1b4c, #0a58ca);
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            margin-top: 150px;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, #ffffff, #d4af37, #ffffff);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: shimmer 5s infinite linear, float 4s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -500px; }
+            100% { background-position: 500px; }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .title-container {
+            animation: glow 4s infinite alternate;
+            padding: 20px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px #0a58ca; }
+            100% { box-shadow: 0 0 40px #d4af37; }
+        }
+
+        p {
+            margin-top: 40px;
+            font-size: 1.2rem;
+            color: #e1e1e1;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="title-container">
+        <h1>Bienvenue dans le pipeline DevOps</h1>
+    </div>
+
+    <p>Automatisation – Intégration Continue – Livraison Continue</p>
+
+</body>
+</html>
